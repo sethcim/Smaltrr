@@ -1,0 +1,79 @@
+Motor Characteristics
+DC Resistance 1.1 ohm
+Unloaded 0.25 A
+Pepper loaded 0.5 - 1.0 A
+
+Motor Driver:
+https://www.robotshop.com/en/drv8835-dual-motor-driver-carrier.html
+https://www.robotshop.com/media/files/pdf/drv8835-dual-motor-driver-carrier-datasheet.pdf
+
+Pins
+GND - GND
+VCC - Dout TBD
+VIN - Vbatt
+BIN2 - tie low 
+BIN1 - tie low or parallel A
+AIN2 - tie low
+AIN1 - Dout TBD (same as VCC)
+BOUT2 - NC or parallel A
+BOUT1 - NC or parallel A
+AOUT2 - Motor (-)
+AOUT1 - Motor (+)
+MODE - NC
+
+Feather Wing OLED
+https://www.adafruit.com/product/2900
+https://learn.adafruit.com/adafruit-oled-featherwing/download
+SCL
+SDA
+A - 0
+B - 16
+C - 2
+
+
+Wifi Feather Huzzah
+https://www.adafruit.com/product/2821
+    RESET   Connect to 16
+    VBAT    Motor Vbatt
+            LED +
+    GND     Motor GND
+            LED -
+            Main Switch -
+A0  ADC     Connect to Vbatt divider (3 uA)
+                High side 1 Mohm
+                Low side 2 x 100 kohm = 200 kohm
+0   LED     Red LED to Vcc & Switch A 
+                no pullup (pulled by LED) if held low during power up, bootloads
+1   TX      Computer
+2   LED     Blue LED to Vcc & Switch C
+                if held low during power up, bootloads
+3   RX      Computer
+4   SDA     Screen
+5   SCL     Screen
+12          Main Switch
+13  MOSI    LED DATA
+14  SCK     LED CLK
+15          Motor Output
+                Pulldown resistor, used to detect boot mode 
+16  Wake    Switch B
+                & Provide a solder jumper to connect to 1 RESET
+
+Sleep behaviour
+ - don't sleep on USB
+ - sleep after 1 hour on battery
+ - wake on reset button (expose externally)
+
+PCB Blank
+.0635 thick
+.0712 with tape
+4.999" wide
+
+Original distance between battery bulkheads: 2.1"
+
+Learnings:
+In eagle the group tool is really weird
+Symbols and footprints can only be selected at their base points
+Keep both editors open at all times
+Main Mistake: not enough connectors - connectorize everything
+State of charge feedback circuit
+Half the USB color maps / pinouts on the internet are wrong
