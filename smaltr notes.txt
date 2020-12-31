@@ -1,34 +1,34 @@
 Motor Characteristics
-DC Resistance 1.1 ohm
-Unloaded 0.25 A
-Pepper loaded 0.5 - 1.0 A
+    DC Resistance 1.1 ohm
+    Unloaded 0.25 A
+    Pepper loaded 0.5 - 1.0 A
 
 Motor Driver:
-https://www.robotshop.com/en/drv8835-dual-motor-driver-carrier.html
-https://www.robotshop.com/media/files/pdf/drv8835-dual-motor-driver-carrier-datasheet.pdf
+    https://www.robotshop.com/en/drv8835-dual-motor-driver-carrier.html
+    https://www.robotshop.com/media/files/pdf/drv8835-dual-motor-driver-carrier-datasheet.pdf
 
 Pins
-GND - GND
-VCC - Dout TBD
-VIN - Vbatt
-BIN2 - tie low 
-BIN1 - tie low or parallel A
-AIN2 - tie low
-AIN1 - Dout TBD (same as VCC)
-BOUT2 - NC or parallel A
-BOUT1 - NC or parallel A
-AOUT2 - Motor (-)
-AOUT1 - Motor (+)
-MODE - NC
+    GND - GND
+    VCC - Dout TBD
+    VIN - Vbatt
+    BIN2 - tie low 
+    BIN1 - tie low or parallel A
+    AIN2 - tie low
+    AIN1 - Dout TBD (same as VCC)
+    BOUT2 - NC or parallel A
+    BOUT1 - NC or parallel A
+    AOUT2 - Motor (-)
+    AOUT1 - Motor (+)
+    MODE - NC
 
 Feather Wing OLED
-https://www.adafruit.com/product/2900
-https://learn.adafruit.com/adafruit-oled-featherwing/download
-SCL
-SDA
-A - 0
-B - 16
-C - 2
+    https://www.adafruit.com/product/2900
+    https://learn.adafruit.com/adafruit-oled-featherwing/download
+    SCL
+    SDA
+    A - 0
+    B - 16
+    C - 2
 
 
 Wifi Feather Huzzah
